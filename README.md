@@ -61,4 +61,3 @@ import("delphi-ai").then(async (delphi) => {
 The recommended way to use this package is from within a project using ES Modules.
 ESM is the official module system for JavaScript. If you are using CommonJS, consider upgrading!
 
-## Development

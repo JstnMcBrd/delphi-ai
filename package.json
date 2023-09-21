@@ -9,6 +9,7 @@
 		"lint": "eslint .",
 		"build": "tsc",
 		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
+		"test-api": "ts-node --esm test/api.ts"
 	},
 	"repository": {
 		"type": "git",
