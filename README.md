@@ -68,4 +68,6 @@ When creating a merge request, your changes must pass linting, building, and uni
 
 GitHub will also periodically run a test to confirm the Delphi AI is still working. You can run this test manually with `npm run test-api`.
 
+When a new [Release](https://github.com/JstnMcBrd/delphi-ai/releases) is created, GitHub will automatically deploy the new version to the [npm registry](https://npmjs.com/package/delphi-ai).
+
 This project abides by [Semantic Versioning](https://semver.org/). To see a list of changes for each update, check the description of [releases on GitHub](https://github.com/JstnMcBrd/delphi-ai/releases).
