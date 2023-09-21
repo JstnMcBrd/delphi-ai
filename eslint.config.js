@@ -75,4 +75,12 @@ export default [
 			...typescriptPlugin.configs["stylistic-type-checked"].rules,
 		},
 	},
+	{
+		files: ["**/*.test.ts"],
+		languageOptions: {
+			globals: {
+				...globals.jest,
+			},
+		},
+	},
 ];
