@@ -1,0 +1,28 @@
+{
+	"name": "delphi-ai",
+	"version": "0.0.0",
+	"description": "Wrapper for the Delphi AI API",
+	"type": "module",
+	"scripts": {
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JstnMcBrd/delphi-ai.git"
+	},
+	"keywords": [
+		"delphi",
+		"ai",
+		"api",
+		"ethics",
+		"morals"
+	],
+	"author": "Justin McBride",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/JstnMcBrd/delphi-ai/issues"
+	},
+	"homepage": "https://github.com/JstnMcBrd/delphi-ai",
+	"engines": {
+		"node": ">=18"
+	},
+}
