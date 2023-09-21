@@ -1,0 +1,45 @@
+{
+	"name": "delphi-ai",
+	"version": "1.0.0",
+	"description": "Wrapper for the Delphi AI API",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint .",
+		"build": "tsc",
+		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
+		"test-api": "ts-node --esm test/api.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JstnMcBrd/delphi-ai.git"
+	},
+	"keywords": [
+		"delphi",
+		"ai",
+		"api",
+		"ethics",
+		"morals"
+	],
+	"author": "Justin McBride",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/JstnMcBrd/delphi-ai/issues"
+	},
+	"homepage": "https://github.com/JstnMcBrd/delphi-ai",
+	"engines": {
+		"node": ">=18"
+	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"@types/node": "^18.17.18",
+		"@typescript-eslint/eslint-plugin": "^6.7.2",
+		"@typescript-eslint/parser": "^6.7.2",
+		"eslint": "^8.49.0",
+		"ts-jest": "^29.1.1",
+		"typescript": "^5.2.2"
+	}
+}

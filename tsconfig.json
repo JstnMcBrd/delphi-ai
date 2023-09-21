@@ -1,0 +1,12 @@
+{
+	"include": ["src/**/*.ts"],
+	"exclude": ["src/**/*.test.ts"],
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "Node16",
+		"outDir": "dist",
+		"declaration": true,
+		"strict": true,
+		"esModuleInterop": true,
+	},
+}

@@ -1,0 +1,26 @@
+name: API Status
+# Checks whether the API is active and working on a regular schedule
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # once a day
+  workflow_dispatch:
+
+jobs:
+  api:
+    runs-on: ubuntu-latest
+    container:
+        image: node:18
+
+    steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+      
+        - name: Install dependencies
+          run: npm install
+
+        - name: Build
+          run: npm run build
+
+        - name: Test API
+          run: npm run test-api

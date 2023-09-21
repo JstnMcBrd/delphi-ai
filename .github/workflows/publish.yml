@@ -1,0 +1,27 @@
+name: Publish
+# Publishes the package to the NPM registry when a new release is created
+
+on:
+  release:
+    types: [released]  
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    container:
+      image: node:18
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
