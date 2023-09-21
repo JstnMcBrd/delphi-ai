@@ -61,3 +61,8 @@ import("delphi-ai").then(async (delphi) => {
 The recommended way to use this package is from within a project using ES Modules.
 ESM is the official module system for JavaScript. If you are using CommonJS, consider upgrading!
 
+## Development
+
+When creating a merge request, your changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
+
+This project abides by [Semantic Versioning](https://semver.org/). To see a list of changes for each update, check the description of [releases on GitHub](https://github.com/JstnMcBrd/delphi-ai/releases).
