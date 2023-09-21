@@ -3,9 +3,9 @@
 
 ## About
 
-**delphi-ai** is a simple unofficial [node](https://nodejs.org/) package to interact with the API for the Delphi AI. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
+**delphi-ai** is a simple unofficial [Node](https://nodejs.org/) package to interact with the API for the Delphi AI. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
 
-[Delphi](https://delphi.allenai.org/) is an AI released in 2021 by the **Allen Institute for Artifical Intelligence**, who described it as *"a computational model for descriptive ethics, i.e., people's moral judgments on a variety of everyday situations."* Essentially, you provide a prompt, and the AI judges whether it is ethical.
+[Delphi](https://delphi.allenai.org/) is an AI released in 2021 by the **Allen Institute for Artifical Intelligence**, who described it as *"a computational model for descriptive ethics, i.e., people's moral judgments on a variety of everyday situations."* Essentially, provide a prompt and the AI will judge whether it is ethical.
 
 The [demo website](https://delphi.allenai.org/) uses an API to retrieve outputs from the computational model. This package acts as a wrapper for that API to allow you to integrate Delphi with your projects.
 
@@ -64,9 +64,9 @@ ESM is the official module system for JavaScript. If you are using CommonJS, con
 
 ## Development
 
-When creating a merge request, your changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
+When a merge request is created, the changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
 
-GitHub will also periodically run a test to confirm the Delphi AI is still working. You can run this test manually with `npm run test-api`.
+GitHub will also periodically run a test to confirm the API is still working. You can run this test manually with `npm run test-api`.
 
 When a new [Release](https://github.com/JstnMcBrd/delphi-ai/releases) is created, GitHub will automatically deploy the new version to the [npm registry](https://npmjs.com/package/delphi-ai).
 
