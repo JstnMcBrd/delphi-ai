@@ -1,4 +1,5 @@
 # delphi-ai
+[![API Status](https://github.com/JstnMcBrd/delphi-ai/workflows/API%20Status/badge.svg)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml)
 
 ## About
 
@@ -8,7 +9,7 @@
 
 The [demo website](https://delphi.allenai.org/) uses an API to retrieve outputs from the computational model. This package acts as a wrapper for that API to allow you to integrate Delphi with your projects.
 
-> WARNING: this package is unofficial and not supported by the developers of Delphi. The API could be turned off at any time.
+> WARNING: this package is unofficial and not supported by the developers of Delphi. The API could be turned off at any time. Please check the API status above before reporting issues.
 
 > NOTE: The copyright for Delphi belongs to the **Allen Institute for Artifical Intelligence**, not the developer of this package.
 
@@ -64,5 +65,7 @@ ESM is the official module system for JavaScript. If you are using CommonJS, con
 ## Development
 
 When creating a merge request, your changes must pass linting, building, and unit tests. These checks are run automatically by GitHub. You can run them manually using `npm run lint`, `npm run build`, and `npm test`.
+
+GitHub will also periodically run a test to confirm the Delphi AI is still working. You can run this test manually with `npm run test-api`.
 
 This project abides by [Semantic Versioning](https://semver.org/). To see a list of changes for each update, check the description of [releases on GitHub](https://github.com/JstnMcBrd/delphi-ai/releases).
