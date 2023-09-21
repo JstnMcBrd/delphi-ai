@@ -2,8 +2,11 @@
 	"name": "delphi-ai",
 	"version": "0.0.0",
 	"description": "Wrapper for the Delphi AI API",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"type": "module",
 	"scripts": {
+		"build": "tsc",
 	},
 	"repository": {
 		"type": "git",
@@ -25,4 +28,10 @@
 	"engines": {
 		"node": ">=18"
 	},
+	"files": [
+		"dist"
+	],
+	"devDependencies": {
+		"typescript": "^5.2.2"
+	}
 }
