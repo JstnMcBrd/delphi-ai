@@ -46,14 +46,14 @@ You must use a dynamic import instead, which must be inside an asynchronous meth
 
 ```js
 (async () => {
-    const delphi = await import("delphi-ai");
+    const { default: delphi } = (await import("delphi-ai"));
     const response = await delphi("Fighting a mummy");
     console.log(response); // "It's wrong"
 })();
 
 // or
 
-import("delphi-ai").then(async (delphi) => {
+import("delphi-ai").then(async ({ default: delphi }) => {
     const response = await delphi("Climbing up the Eiffel Tower");
     console.log(response); // "It's normal"
 });
