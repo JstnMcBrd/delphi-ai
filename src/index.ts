@@ -19,9 +19,7 @@ export default async function (input: string): Promise<string> {
 
 	// Format request URL
 	const url = new URL("https://mosaic-api-frontdoor.apps.allenai.org/predict");
-	url.search = new URLSearchParams({
-		action1: encodeURIComponent(input),
-	}).toString();
+	url.search = new URLSearchParams({ action1: input }).toString();
 
 	// Send request
 	const response = await fetch(url);

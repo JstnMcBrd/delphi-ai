@@ -13,14 +13,13 @@ describe(basename(import.meta.url), () => {
 	const goodResponseText = "mock response";
 	const goodResponse = {
 		ok: true,
-		// eslint-disable-next-line @typescript-eslint/require-await
-		json: async () => ({ answer: { text: goodResponseText } }),
+		json: () => Promise.resolve({ answer: { text: goodResponseText } }),
 	} as Response;
 
 	const badResponse = {
 		ok: false,
 		status: 404,
-		statusText: "Not found",
+		statusText: "Not Found",
 	} as Response;
 
 	beforeEach(() => {
@@ -31,7 +30,7 @@ describe(basename(import.meta.url), () => {
 		await delphi("");
 		const url = mockFetch.mock.calls[0][0] as URL;
 		const params = new URLSearchParams(url.search);
-		const input = decodeURIComponent(params.get("action1") ?? "");
+		const input = params.get("action1") ?? "";
 		expect(input).toEqual(" ");
 	});
 
