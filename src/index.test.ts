@@ -31,7 +31,7 @@ describe(basename(import.meta.url), () => {
 		await delphi("");
 		const url = mockFetch.mock.calls[0][0] as URL;
 		const params = new URLSearchParams(url.search);
-		const input = decodeURIComponent(params.get("action1") ?? "");
+		const input = params.get("action1") ?? "";
 		expect(input).toEqual(" ");
 	});
 
