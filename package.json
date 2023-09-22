@@ -1,6 +1,6 @@
 {
 	"name": "delphi-ai",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "API wrapper for the Delphi AI",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -13,7 +13,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/JstnMcBrd/delphi-ai.git"
+		"url": "https://github.com/JstnMcBrd/delphi-ai.git"
 	},
 	"keywords": [
 		"delphi",
