@@ -1,7 +1,7 @@
 {
 	"name": "delphi-ai",
 	"version": "1.0.0",
-	"description": "Wrapper for the Delphi AI API",
+	"description": "API wrapper for the Delphi AI",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
