@@ -25,7 +25,7 @@ However, it does require Node 18 or higher. Use `node --version` to check your n
 
 ## Usage
 
-> Note: If the Delphi API returns a non-200 response, an error will be thrown.
+> Note: If the API returns a non-200 response, an error will be thrown.
 > None of the examples below include error handling, but don't forget it!
 
 ### ES Modules
@@ -35,8 +35,8 @@ This package uses ESM, so it is easiest to import from within a project also usi
 ```js
 import delphi from "delphi-ai";
 
-const response = await delphi("Eating ");
-console.log(response);
+const response = await delphi("Building a rocket");
+console.log(response); // "It's impressive"
 ```
 
 ### CommonJS
@@ -47,15 +47,15 @@ You must use a dynamic import instead, which must be inside an asynchronous meth
 ```js
 (async () => {
     const delphi = await import("delphi-ai");
-    const response = await delphi("Eating ");
-    console.log(response);
+    const response = await delphi("Fighting a mummy");
+    console.log(response); // "It's wrong"
 })();
 
 // or
 
 import("delphi-ai").then(async (delphi) => {
-    const response = await delphi("Eating ");
-    console.log(response);
+    const response = await delphi("Climbing up the Eiffel Tower");
+    console.log(response); // "It's normal"
 });
 ```
 
