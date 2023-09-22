@@ -15,7 +15,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v3
+      - name: Setup NPM token
+        uses: actions/setup-node@v3
         with:
           registry-url: "https://registry.npmjs.org"
 
