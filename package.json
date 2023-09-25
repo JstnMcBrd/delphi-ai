@@ -8,8 +8,8 @@
 	"scripts": {
 		"lint": "eslint .",
 		"build": "tsc",
-		"test": "NODE_OPTIONS=--experimental-vm-modules jest",
 		"test-api": "ts-node --esm test/api.ts"
+		"test": "vitest",
 	},
 	"repository": {
 		"type": "git",
@@ -39,7 +39,7 @@
 		"@typescript-eslint/eslint-plugin": "^6.7.2",
 		"@typescript-eslint/parser": "^6.7.2",
 		"eslint": "^8.49.0",
-		"ts-jest": "^29.1.1",
-		"typescript": "^5.2.2"
+		"typescript": "^5.2.2",
+		"vitest": "^0.34.5"
 	}
 }
