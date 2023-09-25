@@ -8,8 +8,8 @@
 	"scripts": {
 		"lint": "eslint .",
 		"build": "tsc",
-		"test-api": "ts-node --esm test/api.ts"
-		"test": "vitest",
+		"test": "vitest src",
+		"test-api": "vitest api"
 	},
 	"repository": {
 		"type": "git",
