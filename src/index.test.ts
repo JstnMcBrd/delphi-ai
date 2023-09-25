@@ -3,8 +3,7 @@ import { URL, URLSearchParams } from "node:url";
 
 import { afterAll, describe, expect, it, vi } from "vitest";
 
-// Dynamically import the module to test
-const delphi = (await import("./index.js")).default;
+import delphi from "./index.js";
 
 describe(basename(import.meta.url), () => {
 
