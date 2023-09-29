@@ -1,5 +1,5 @@
 # delphi-ai
-[![API Status](https://github.com/JstnMcBrd/delphi-ai/workflows/API%20Status/badge.svg)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml)
+[![API Status](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml/badge.svg)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml)
 
 ## About
 
