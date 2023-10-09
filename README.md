@@ -41,26 +41,23 @@ console.log(response); // "It's impressive"
 
 ### CommonJS
 
-Because ES module imports are asynchronous, this package cannot be imported with a synchronous `require()` call.
-You must use a dynamic import instead, which must be inside an asynchronous method or handled as a `Promise`.
+ES module imports are asynchronous, but CommonJS `require()` calls are synchronous.
+But fear not! This package comes with an alternative export path for projects using CommonJS so you can use `require()`.
 
 ```js
+const delphi = require("delphi-ai").default;
+
 (async () => {
-    const delphi = (await import("delphi-ai")).default;
-    const response = await delphi("Fighting a mummy");
-    console.log(response); // "It's wrong"
+	const response = await delphi("Fighting a mummy");
+	console.log(response); // "It's wrong"
 })();
 
 // or
 
-import("delphi-ai").then(async ({ default: delphi }) => {
-    const response = await delphi("Climbing up the Eiffel Tower");
-    console.log(response); // "It's normal"
+delphi("Climbing up the Eiffel Tower").then((response) => {
+	console.log(response); // "It's normal"
 });
 ```
-
-The recommended way to use this package is from within a project using ES Modules.
-ESM is the official module system for JavaScript. If you are using CommonJS, consider upgrading!
 
 ## Development
 

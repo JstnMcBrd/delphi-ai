@@ -59,7 +59,7 @@ export default [
 		},
 	},
 	{
-		files: ["**/*.ts"],
+		files: ["**/*.ts", "**/*.cts"],
 		plugins: {
 			"@typescript-eslint": typescriptPlugin,
 		},

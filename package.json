@@ -2,9 +2,19 @@
 	"name": "delphi-ai",
 	"version": "1.0.2",
 	"description": "API wrapper for the Delphi AI",
+	"type": "module",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
-	"type": "module",
+	"exports": {
+		"types": {
+			"require": "./dist/index.d.cts",
+			"default": "./dist/index.d.ts"
+		},
+		"default": {
+			"require": "./dist/index.cjs",
+			"default": "./dist/index.js"
+		}
+	},
 	"scripts": {
 		"lint": "eslint .",
 		"build": "tsc",
@@ -24,9 +34,7 @@
 	],
 	"author": "Justin McBride",
 	"license": "Apache-2.0",
-	"bugs": {
-		"url": "https://github.com/JstnMcBrd/delphi-ai/issues"
-	},
+	"bugs": "https://github.com/JstnMcBrd/delphi-ai/issues",
 	"homepage": "https://github.com/JstnMcBrd/delphi-ai",
 	"engines": {
 		"node": ">=18"
