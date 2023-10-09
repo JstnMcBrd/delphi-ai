@@ -26,9 +26,7 @@ export default async function (input: string): Promise<string> {
 
 	// Format and throw HTTP errors
 	if (!response.ok) {
-		const err = new Error(`${response.status} ${response.statusText}.`, { cause: response });
-		err.name = "HTTPError";
-		throw err;
+		throw new Error(`${response.status} ${response.statusText}`, { cause: response });
 	}
 
 	// Parse and return response
