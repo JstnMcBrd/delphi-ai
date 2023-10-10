@@ -11,7 +11,7 @@ interface DelphiAPIResponse {
  * @returns The output from Delphi AI
  * @throws If the API returns a non-200 response
  */
-export default async function (input: string): Promise<string> {
+export default async function delphi (input: string): Promise<string> {
 	// The API does not like empty prompts
 	if (input === "") {
 		input = " ";

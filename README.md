@@ -45,7 +45,7 @@ ES module imports are asynchronous, but CommonJS `require()` calls are synchrono
 But fear not! This package comes with an alternative export path for projects using CommonJS so you can use `require()`.
 
 ```js
-const delphi = require("delphi-ai").default;
+const delphi = require("delphi-ai");
 
 (async () => {
 	const response = await delphi("Fighting a mummy");
