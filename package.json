@@ -1,6 +1,6 @@
 {
 	"name": "delphi-ai",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"description": "API wrapper for the Delphi AI",
 	"type": "module",
 	"main": "dist/index.js",
@@ -43,8 +43,8 @@
 		"dist"
 	],
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^6.7.4",
-		"@typescript-eslint/parser": "^6.7.4",
+		"@typescript-eslint/eslint-plugin": "^6.7.5",
+		"@typescript-eslint/parser": "^6.7.5",
 		"eslint": "^8.50.0",
 		"typescript": "^5.2.2",
 		"vitest": "^0.34.6"
