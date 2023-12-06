@@ -30,8 +30,6 @@ However, it does require Node 18 or higher. Use `node --version` to check your n
 
 ### ES Modules
 
-This package uses ESM, so it is easiest to import from within a project also using ESM.
-
 ```js
 import delphi from "delphi-ai";
 
@@ -40,9 +38,6 @@ console.log(response); // "It's impressive"
 ```
 
 ### CommonJS
-
-ES module imports are asynchronous, but CommonJS `require()` calls are synchronous.
-But fear not! This package comes with an alternative export path for projects using CommonJS so you can use `require()`.
 
 ```js
 const delphi = require("delphi-ai");
