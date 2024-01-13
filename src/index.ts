@@ -1,4 +1,4 @@
-import { URL, URLSearchParams } from "node:url";
+import { URL, URLSearchParams } from 'node:url';
 
 interface DelphiAPIResponse {
 	answer: {
@@ -11,14 +11,14 @@ interface DelphiAPIResponse {
  * @returns The output from Delphi AI
  * @throws If the API returns a non-200 response
  */
-export default async function delphi (input: string): Promise<string> {
+export default async function delphi(input: string): Promise<string> {
 	// The API does not like empty prompts
-	if (input === "") {
-		input = " ";
+	if (input === '') {
+		input = ' ';
 	}
 
 	// Format request URL
-	const url = new URL("https://mosaic-api-frontdoor.apps.allenai.org/predict");
+	const url = new URL('https://mosaic-api-frontdoor.apps.allenai.org/predict');
 	url.search = new URLSearchParams({ action1: input }).toString();
 
 	// Send request

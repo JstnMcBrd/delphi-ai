@@ -43,9 +43,10 @@
 		"dist"
 	],
 	"devDependencies": {
+		"@stylistic/eslint-plugin": "^1.5.3",
 		"@types/node": "^20.10.6",
-		"@typescript-eslint/eslint-plugin": "^6.17.0",
-		"@typescript-eslint/parser": "^6.17.0",
+		"@typescript-eslint/eslint-plugin": "^6.18.1",
+		"@typescript-eslint/parser": "^6.18.1",
 		"eslint": "^8.56.0",
 		"typescript": "^5.3.3",
 		"vitest": "^1.1.1"
