@@ -2,7 +2,7 @@
 	"include": ["src"],
 	"exclude": ["**/*.test.ts"],
 	"compilerOptions": {
-		"target": "ES2022",
+		"target": "ESNext",
 		"module": "Node16",
 		"outDir": "dist",
 		"declaration": true,
