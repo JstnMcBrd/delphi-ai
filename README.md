@@ -1,5 +1,6 @@
 # delphi-ai
 [![API Status](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml/badge.svg)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml)
+[![npm package](https://badge.fury.io/js/delphi-ai.svg)](https://badge.fury.io/js/delphi-ai)
 
 ## About
 
