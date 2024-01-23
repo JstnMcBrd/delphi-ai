@@ -5,15 +5,15 @@
 
 ## About
 
-**delphi-ai** is a simple unofficial [Node](https://nodejs.org/) package to interact with the API for the Delphi AI. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
+**delphi-ai** is a simple [Node](https://nodejs.org/) package to interact with the API for the Delphi AI. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
 
-[Delphi](https://delphi.allenai.org/) is an AI released in 2021 by the **Allen Institute for Artifical Intelligence**, who described it as *"a computational model for descriptive ethics, i.e., people's moral judgments on a variety of everyday situations."* Essentially, provide a prompt and the AI will judge whether it is ethical.
+Delphi is an AI released in 2021 by the **Allen Institute for Artifical Intelligence**, who described it as *"a computational model for descriptive ethics, i.e., people's moral judgments on a variety of everyday situations."* Essentially, provide a prompt and the AI will judge whether it is ethical.
 
 The [demo website](https://delphi.allenai.org/) uses an API to retrieve outputs from the computational model. This package acts as a wrapper for that API to allow you to integrate Delphi with your projects.
 
-> WARNING: this package is unofficial and not supported by the developers of Delphi. The API could be turned off at any time. Please check the API status above before reporting issues.
-
-> NOTE: The copyright for Delphi belongs to the **Allen Institute for Artifical Intelligence**, not the developer of this package.
+> <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
+>
+> The copyright for Delphi belongs to the **Allen Institute for Artifical Intelligence**. This package is unofficial and not supported by them. The API could be turned off at any time. Please check the API status above before reporting issues.
 
 ## Prerequesites
 
@@ -27,8 +27,8 @@ However, it does require Node 18 or higher. Use `node --version` to check your n
 
 ## Usage
 
-> Note: If the API returns a non-200 response, an error will be thrown.
-> None of the examples below include error handling, but don't forget it!
+If the API returns a non-200 response, an error will be thrown.
+None of the examples below include error handling, but don't forget it!
 
 ### ES Modules
 
