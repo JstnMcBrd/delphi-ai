@@ -1,4 +1,4 @@
-name: API Status
+name: API status
 # Checks whether the API is active and working on a regular schedule
 
 on:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  status:
+  api-status:
     runs-on: ubuntu-latest
 
     steps:
