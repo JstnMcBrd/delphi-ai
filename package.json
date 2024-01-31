@@ -2,9 +2,22 @@
 	"name": "delphi-ai",
 	"version": "2.0.1-alpha",
 	"description": "API wrapper for the Delphi AI",
+	"keywords": [
+		"delphi",
+		"ai",
+		"api",
+		"ethics",
+		"morals"
+	],
+	"homepage": "https://github.com/JstnMcBrd/delphi-ai",
+	"bugs": "https://github.com/JstnMcBrd/delphi-ai/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JstnMcBrd/delphi-ai.git"
+	},
+	"license": "Apache-2.0",
+	"author": "Justin McBride",
 	"type": "module",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
 	"exports": {
 		"types": {
 			"require": "./dist/index.d.cts",
@@ -15,40 +28,27 @@
 			"default": "./dist/index.js"
 		}
 	},
-	"scripts": {
-		"lint": "eslint .",
-		"build": "tsc",
-		"test": "vitest src",
-		"test-api": "vitest api"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/JstnMcBrd/delphi-ai.git"
-	},
-	"keywords": [
-		"delphi",
-		"ai",
-		"api",
-		"ethics",
-		"morals"
-	],
-	"author": "Justin McBride",
-	"license": "Apache-2.0",
-	"bugs": "https://github.com/JstnMcBrd/delphi-ai/issues",
-	"homepage": "https://github.com/JstnMcBrd/delphi-ai",
-	"engines": {
-		"node": ">=18"
-	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"files": [
 		"dist"
 	],
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint .",
+		"test": "vitest src",
+		"test-api": "vitest api"
+	},
 	"devDependencies": {
 		"@stylistic/eslint-plugin": "^1.5.4",
-		"@types/node": "^20.10.6",
-		"@typescript-eslint/eslint-plugin": "^6.19.0",
-		"@typescript-eslint/parser": "^6.19.0",
+		"@types/node": "^20.11.13",
+		"@typescript-eslint/eslint-plugin": "^6.20.0",
+		"@typescript-eslint/parser": "^6.20.0",
 		"eslint": "^8.56.0",
 		"typescript": "^5.3.3",
-		"vitest": "^1.2.1"
+		"vitest": "^1.2.2"
+	},
+	"engines": {
+		"node": ">=18"
 	}
 }
