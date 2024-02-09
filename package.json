@@ -13,7 +13,7 @@
 	"bugs": "https://github.com/JstnMcBrd/delphi-ai/issues",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/JstnMcBrd/delphi-ai.git"
+		"url": "git+https://github.com/JstnMcBrd/delphi-ai.git"
 	},
 	"license": "Apache-2.0",
 	"author": "Justin McBride",
