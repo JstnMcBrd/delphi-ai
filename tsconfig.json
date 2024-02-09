@@ -3,7 +3,7 @@
 	"exclude": ["**/*.test.*"],
 	"compilerOptions": {
 		"target": "ESNext",
-		"module": "Node16",
+		"module": "NodeNext",
 		"outDir": "dist",
 		"declaration": true,
 		"strict": true,
