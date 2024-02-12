@@ -33,25 +33,25 @@ None of the examples below include error handling, but don't forget it!
 ### ES Modules
 
 ```js
-import delphi from "delphi-ai";
+import delphi from 'delphi-ai';
 
-const response = await delphi("Building a rocket");
+const response = await delphi('Building a rocket');
 console.log(response); // "It's impressive"
 ```
 
 ### CommonJS
 
 ```js
-const delphi = require("delphi-ai");
+const delphi = require('delphi-ai');
 
 (async () => {
-	const response = await delphi("Fighting a mummy");
+	const response = await delphi('Fighting a mummy');
 	console.log(response); // "It's wrong"
 })();
 
 // or
 
-delphi("Climbing up the Eiffel Tower").then((response) => {
+delphi('Climbing up the Eiffel Tower').then((response) => {
 	console.log(response); // "It's normal"
 });
 ```
