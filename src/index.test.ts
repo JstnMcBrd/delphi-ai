@@ -1,5 +1,5 @@
 import { basename } from 'node:path';
-import { URL, URLSearchParams } from 'node:url';
+import { URL } from 'node:url';
 
 import { afterAll, describe, expect, it, vi } from 'vitest';
 
@@ -29,8 +29,7 @@ describe(basename(import.meta.url), () => {
 		mockFetch.mockResolvedValue(goodResponse);
 		await delphi('');
 		const url = mockFetch.mock.calls[0][0];
-		const params = new URLSearchParams(url.search);
-		const input = params.get('action1') ?? '';
+		const input = url.searchParams.get('action1') ?? '';
 		expect(input).toEqual(' ');
 	});
 
