@@ -1,4 +1,4 @@
-import { URL, URLSearchParams } from 'node:url';
+import { URL } from 'node:url';
 
 interface DelphiAPIResponse {
 	answer: {
@@ -19,7 +19,7 @@ export default async function delphi(input: string): Promise<string> {
 
 	// Format request URL
 	const url = new URL('https://mosaic-api-frontdoor.apps.allenai.org/predict');
-	url.search = new URLSearchParams({ action1: input }).toString();
+	url.searchParams.append('action1', input);
 
 	// Send request
 	const response = await fetch(url);
