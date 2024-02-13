@@ -3,9 +3,9 @@
 	"version": "2.0.1-alpha",
 	"description": "API wrapper for the Delphi AI",
 	"keywords": [
+		"api",
 		"delphi",
 		"ai",
-		"api",
 		"ethics",
 		"morals"
 	],
