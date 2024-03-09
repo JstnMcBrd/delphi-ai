@@ -1,7 +1,14 @@
 # delphi-ai
 
-[![API status](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml/badge.svg)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml)
-[![npm package](https://badge.fury.io/js/delphi-ai.svg)](https://badge.fury.io/js/delphi-ai)
+[![API status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/api.yml?logo=github&label=API%20status)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml)
+[![Validate](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/validate.yml?logo=github&label=Validate)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/validate.yml)
+<br />
+[![NPM Version](https://img.shields.io/npm/v/delphi-ai)](https://www.npmjs.com/package/delphi-ai)
+[![NPM License](https://img.shields.io/npm/l/delphi-ai)](./LICENSE)
+![NPM Type Definitions](https://img.shields.io/npm/types/delphi-ai)
+![NPM Downloads](https://img.shields.io/npm/dt/delphi-ai)
+<br />
+![Node version](https://img.shields.io/node/v/delphi-ai)
 
 ## About
 
