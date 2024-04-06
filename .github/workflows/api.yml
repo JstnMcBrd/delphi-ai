@@ -26,4 +26,3 @@ jobs:
           run: npm run test-api -- --pool=forks
           # --pool=forks is necessary to prevent random timeouts
           # https://github.com/JstnMcBrd/delphi-ai/issues/26
-          # https://github.com/vitest-dev/vitest/issues/2008#issuecomment-1871066901
