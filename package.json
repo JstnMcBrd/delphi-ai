@@ -43,7 +43,7 @@
 		"@jstnmcbrd/eslint-config": "^1.0.0",
 		"@types/node": "^20.12.5",
 		"eslint": "^8.57.0",
-		"typescript": "^5.4.4",
+		"typescript": "^5.5.3",
 		"vitest": "^2.0.1"
 	},
 	"engines": {
