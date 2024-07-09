@@ -6,7 +6,7 @@ import { afterAll, describe, expect, it, vi } from 'vitest';
 import delphi from './index.js';
 
 describe(basename(import.meta.url), () => {
-	const mockFetch = vi.fn<URL[], Promise<Response>>();
+	const mockFetch = vi.fn<typeof fetch>();
 	vi.stubGlobal('fetch', mockFetch);
 
 	const goodResponseText = 'mock response';
@@ -28,7 +28,7 @@ describe(basename(import.meta.url), () => {
 	it('should replace empty input with whitespace', async () => {
 		mockFetch.mockResolvedValue(goodResponse);
 		await delphi('');
-		const url = mockFetch.mock.calls[0][0];
+		const url = new URL(mockFetch.mock.calls[0][0]);
 		const input = url.searchParams.get('action1') ?? '';
 		expect(input).toEqual(' ');
 	});
