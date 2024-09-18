@@ -12,6 +12,7 @@
 		"noImplicitReturns": true,
 		"noImplicitOverride": true,
 		"noPropertyAccessFromIndexSignature": true,
+		"noUncheckedSideEffectImports": true,
 		"verbatimModuleSyntax": true,
 		"isolatedModules": true,
 		"isolatedDeclarations": true,
