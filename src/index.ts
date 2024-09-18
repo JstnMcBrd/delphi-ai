@@ -1,5 +1,3 @@
-import { URL } from 'node:url';
-
 interface DelphiAPIResponse {
 	answer: {
 		text: string;
