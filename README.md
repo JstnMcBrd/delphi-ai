@@ -10,6 +10,10 @@
 <br />
 ![Node version](https://img.shields.io/node/v/delphi-ai)
 
+> <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/error.svg"> 
+>
+> This package is permanently broken and should not be used. Please read [#55](https://github.com/JstnMcBrd/delphi-ai/issues/55).
+
 ## About
 
 **delphi-ai** is a simple [Node](https://nodejs.org/) package to interact with the API for the Delphi AI. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
