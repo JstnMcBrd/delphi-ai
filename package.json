@@ -1,6 +1,6 @@
 {
 	"name": "delphi-ai",
-	"version": "2.0.2",
+	"version": "2.0.3-alpha",
 	"description": "API wrapper for the Delphi AI",
 	"keywords": [
 		"api",
@@ -39,6 +39,7 @@
 	},
 	"devDependencies": {
 		"@jstnmcbrd/eslint-config": "^1.0.0",
+		"@types/node": "^22.9.0",
 		"eslint": "^8.57.1",
 		"typescript": "^5.6.3",
 		"vitest": "^2.1.4"
