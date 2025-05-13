@@ -5,11 +5,15 @@ on:
   release:
     types: [released]
 
+permissions: {}
+
 jobs:
   publish:
     runs-on: ubuntu-latest
+
     permissions:
-      id-token: write
+      contents: read # Required for actions/checkout
+      id-token: write # Required for npm publish
 
     steps:
       - name: Checkout repository
