@@ -3,12 +3,17 @@ name: API status
 
 on:
   schedule:
-    - cron: "0 0 * * *" # once a day
+    - cron: "0 0 * * *" # Once a day
   workflow_dispatch:
+
+permissions: {}
 
 jobs:
   api-status:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read # Required for actions/checkout
 
     steps:
       - name: Checkout repository
