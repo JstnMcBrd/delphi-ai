@@ -1,5 +1,5 @@
 name: Publish
-# Publishes the package to the NPM registry when a new release is created
+description: Publishes the package to the NPM registry when a new release is created
 
 on:
   release:

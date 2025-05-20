@@ -1,5 +1,5 @@
 name: API status
-# Checks whether the API is active and working on a regular schedule
+description: Checks whether the API is active and working on a regular schedule
 
 on:
   schedule:
