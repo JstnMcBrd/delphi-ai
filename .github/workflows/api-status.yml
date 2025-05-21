@@ -1,4 +1,4 @@
-name: API status
+name: API Status
 description: Checks whether the API is active and working on a regular schedule
 
 on:
@@ -10,6 +10,8 @@ permissions: {}
 
 jobs:
   api-status:
+    name: Check API status
+
     runs-on: ubuntu-latest
 
     permissions:

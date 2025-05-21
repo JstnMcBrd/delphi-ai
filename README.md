@@ -1,7 +1,7 @@
 # delphi-ai
 
-[![API status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/api.yml?logo=github&label=API%20status)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api.yml)
-[![Validate](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/validate.yml?logo=github&label=Validate)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/validate.yml)
+[![API Status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/api-status.yml?logo=github&label=API%20Status)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api-status.yml)
+[![CI](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/ci.yml?logo=github&label=CI)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/ci.yml)
 <br />
 [![NPM Version](https://img.shields.io/npm/v/delphi-ai)](https://www.npmjs.com/package/delphi-ai)
 [![NPM License](https://img.shields.io/npm/l/delphi-ai)](./LICENSE)
