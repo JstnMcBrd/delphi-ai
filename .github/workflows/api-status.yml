@@ -1,15 +1,17 @@
-name: API status
-# Checks whether the API is active and working on a regular schedule
+name: API Status
+description: Checks whether the API is active and working on a regular schedule
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Once a day
+    - cron: 0 0 * * * # Once a day
   workflow_dispatch:
 
 permissions: {}
 
 jobs:
   api-status:
+    name: Check API status
+
     runs-on: ubuntu-latest
 
     permissions:
@@ -22,10 +24,11 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: .nvmrc
+          cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm clean-install
 
       - name: Test API
         run: npm run test-api

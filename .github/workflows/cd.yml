@@ -1,5 +1,5 @@
-name: Publish
-# Publishes the package to the NPM registry when a new release is created
+name: CD
+description: Publishes the package to the NPM registry when a new release is created
 
 on:
   release:
@@ -9,6 +9,8 @@ permissions: {}
 
 jobs:
   publish:
+    name: Publish
+
     runs-on: ubuntu-latest
 
     permissions:
@@ -22,11 +24,12 @@ jobs:
       - name: Setup node
         uses: actions/setup-node@v4
         with:
-          node-version-file: '.nvmrc'
-          registry-url: 'https://registry.npmjs.org'
+          node-version-file: .nvmrc
+          cache: npm
+          registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
-        run: npm install
+        run: npm clean-install
 
       - name: Build
         run: npm run build
