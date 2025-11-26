@@ -17,7 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
-- Remove redundant export fields in `package.json` ([#68](https://github.com/JstnMcBrd/delphi-ai/pull/68))
+- Remove redundant `"main"` and `"types"` fields in `package.json` ([#68](https://github.com/JstnMcBrd/delphi-ai/pull/68))
+
+### Fixed
+
+- Fix exports field in `package.json` ([#137](https://github.com/JstnMcBrd/delphi-ai/pull/137))
 
 ## [2.0.2] - 2024-09-30
 
