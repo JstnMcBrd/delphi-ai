@@ -35,7 +35,7 @@
 	],
 	"scripts": {
 		"build": "tsc -p tsconfig.build.json",
-		"lint": "eslint .",
+		"lint": "eslint",
 		"test": "vitest src",
 		"test-api": "vitest api"
 	},
