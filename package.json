@@ -34,7 +34,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsc",
+		"build": "tsc -p tsconfig.build.json",
 		"lint": "eslint .",
 		"test": "vitest src",
 		"test-api": "vitest api"
