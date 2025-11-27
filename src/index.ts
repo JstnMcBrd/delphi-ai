@@ -24,7 +24,10 @@ export default async function delphi(input: string): Promise<string> {
 
 	// Format and throw HTTP errors
 	if (!response.ok) {
-		throw new Error(`${response.status} ${response.statusText}`, { cause: response });
+		throw new Error(
+			`${response.status.toString()} ${response.statusText}`,
+			{ cause: response },
+		);
 	}
 
 	// Parse and return response
