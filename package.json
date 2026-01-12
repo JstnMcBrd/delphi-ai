@@ -15,7 +15,7 @@
 		"type": "git",
 		"url": "git+https://github.com/JstnMcBrd/delphi-ai.git"
 	},
-	"license": "Apache-2.0",
+	"license": "ISC",
 	"author": "Justin McBride",
 	"type": "module",
 	"exports": {
