@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Clarify browser compatibility in README ([#74](https://github.com/JstnMcBrd/delphi-ai/pull/74))
+- Use ISC license ([#148](https://github.com/JstnMcBrd/delphi-ai/pull/148))
 
 ### Added
 
