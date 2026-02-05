@@ -45,7 +45,7 @@
 		"eslint": "^9.39.1",
 		"jiti": "^2.6.1",
 		"typescript": "^5.9.3",
-		"vitest": "^4.0.14"
+		"vitest": "^4.0.18"
 	},
 	"engines": {
 		"node": ">=18"
