@@ -41,6 +41,6 @@ describe(basename(import.meta.url), () => {
 
 	it('should throw an error if it receives a bad response', async () => {
 		mockFetch.mockResolvedValue(badResponse);
-		await expect(delphi('test')).rejects.toThrowError();
+		await expect(delphi('test')).rejects.toThrow();
 	});
 });
