@@ -48,5 +48,11 @@
 	},
 	"engines": {
 		"node": ">=18"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": ">=22.18.0"
+		}
 	}
 }
