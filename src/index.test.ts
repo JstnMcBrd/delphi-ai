@@ -4,7 +4,7 @@ import { afterAll, describe, expect, test, vi } from 'vitest';
 
 import delphi from './index.js';
 
-describe('delphi', () => {
+describe(delphi, () => {
 	const mockFetch = vi.fn<typeof fetch>();
 	vi.stubGlobal('fetch', mockFetch);
 
