@@ -1,14 +1,11 @@
 # delphi-ai
 
 [![API Status](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/api-status.yml?logo=github&label=API%20Status)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/api-status.yml)
-[![CI](https://img.shields.io/github/actions/workflow/status/JstnMcBrd/delphi-ai/ci.yml?logo=github&label=CI)](https://github.com/JstnMcBrd/delphi-ai/actions/workflows/ci.yml)
-<br />
-[![NPM Version](https://img.shields.io/npm/v/delphi-ai)](https://www.npmjs.com/package/delphi-ai)
-[![NPM License](https://img.shields.io/npm/l/delphi-ai)](./LICENSE)
-![NPM Type Definitions](https://img.shields.io/npm/types/delphi-ai)
-![NPM Downloads](https://img.shields.io/npm/dt/delphi-ai)
-<br />
-![Node version](https://img.shields.io/node/v/delphi-ai)
+<br>
+[![npm version](https://img.shields.io/npm/v/delphi-ai)](https://www.npmjs.com/package/delphi-ai)
+![node version](https://img.shields.io/node/v/delphi-ai)
+[![npm license](https://img.shields.io/npm/l/delphi-ai)](./LICENSE)
+![npm downloads](https://img.shields.io/npm/dt/delphi-ai)
 
 > <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/error.svg"> 
 >
