@@ -1,11 +1,10 @@
-import { basename } from 'node:path';
 import { URL } from 'node:url';
 
-import { afterAll, describe, expect, it, vi } from 'vitest';
+import { afterAll, describe, expect, test, vi } from 'vitest';
 
 import delphi from './index.js';
 
-describe(basename(import.meta.url), () => {
+describe('delphi', () => {
 	const mockFetch = vi.fn<typeof fetch>();
 	vi.stubGlobal('fetch', mockFetch);
 
@@ -22,10 +21,10 @@ describe(basename(import.meta.url), () => {
 	} as Response;
 
 	afterAll(() => {
-		vi.restoreAllMocks();
+		vi.unstubAllGlobals();
 	});
 
-	it('should replace empty input with whitespace', async () => {
+	test('should replace empty input with whitespace', async () => {
 		mockFetch.mockResolvedValue(goodResponse);
 		await delphi('');
 		const url = new URL(mockFetch.mock.calls[0][0]);
@@ -33,13 +32,13 @@ describe(basename(import.meta.url), () => {
 		expect(input).toEqual(' ');
 	});
 
-	it('should return the answer text if it receives a good response', async () => {
+	test('should return the answer text if it receives a good response', async () => {
 		mockFetch.mockResolvedValue(goodResponse);
 		const output = await delphi('');
 		expect(output).toEqual(goodResponseText);
 	});
 
-	it('should throw an error if it receives a bad response', async () => {
+	test('should throw an error if it receives a bad response', async () => {
 		mockFetch.mockResolvedValue(badResponse);
 		await expect(delphi('test')).rejects.toThrow();
 	});
