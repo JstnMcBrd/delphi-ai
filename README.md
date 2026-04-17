@@ -28,7 +28,7 @@ The [demo website](https://delphi.allenai.org/) uses an API to retrieve outputs 
 
 ## Prerequesites
 
-This package has no production dependencies, and works with Node (`>=18`) or the browser.
+This package has no production dependencies, and works with Node.js (`>=18`) or the browser.
 
 ## Installation
 
