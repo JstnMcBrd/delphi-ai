@@ -15,15 +15,15 @@
 
 **delphi-ai** is a simple package to interact with the API for the Delphi AI. It is developed in [TypeScript](https://www.typescriptlang.org/) and transpiles to JavaScript (ESM).
 
-Delphi is an AI released in 2021 by the **Allen Institute for Artifical Intelligence**, who described it as *"a computational model for descriptive ethics, i.e., people's moral judgments on a variety of everyday situations."* Essentially, provide a prompt and the AI will judge whether it is ethical.
+Delphi is an AI released in 2021 by the **Allen Institute for Artificial Intelligence**, who described it as *"a computational model for descriptive ethics, i.e., people's moral judgments on a variety of everyday situations."* Essentially, provide a prompt and the AI will judge whether it is ethical.
 
 The [demo website](https://delphi.allenai.org/) uses an API to retrieve outputs from the computational model. This package acts as a wrapper for that API to allow you to integrate Delphi with your projects.
 
 > <img alt="Warning" src="https://raw.githubusercontent.com/Mqxx/GitHub-Markdown/main/blockquotes/badge/dark-theme/warning.svg">
 >
-> The copyright for Delphi belongs to the **Allen Institute for Artifical Intelligence**. This package is unofficial and not supported by them. The API could be turned off at any time. Please check the API status above before reporting issues.
+> The copyright for Delphi belongs to the **Allen Institute for Artificial Intelligence**. This package is unofficial and not supported by them. The API could be turned off at any time. Please check the API status above before reporting issues.
 
-## Prerequesites
+## Prerequisites
 
 This package has no production dependencies, and works with Node.js (`>=18`) or the browser.
 
