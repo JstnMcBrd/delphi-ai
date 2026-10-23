@@ -1,15 +1,23 @@
 {
+	"files": [],
+  	"references": [
+		{ "path": "./tsconfig.build.json" },
+		{ "path": "./tsconfig.node.json" }
+	],
 	"compilerOptions": {
-		"target": "ESNext",
-		"module": "NodeNext",
-		"strict": true,
-		"noUncheckedIndexedAccess": true,
 		"exactOptionalPropertyTypes": true,
-		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
 		"noImplicitOverride": true,
+		"noImplicitReturns": true,
 		"noPropertyAccessFromIndexSignature": true,
-		"noUncheckedSideEffectImports": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		"module": "nodenext",
+
+		"noEmit": true,
+
 		"verbatimModuleSyntax": true,
-		"isolatedModules": true,
 	},
 }

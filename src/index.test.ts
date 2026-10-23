@@ -1,5 +1,3 @@
-import { URL } from 'node:url';
-
 import { afterAll, describe, expect, test, vi } from 'vitest';
 
 import delphi from './index.js';
@@ -27,7 +25,10 @@ describe(delphi, () => {
 	test('should replace empty input with whitespace', async () => {
 		mockFetch.mockResolvedValue(goodResponse);
 		await delphi('');
-		const url = new URL(mockFetch.mock.calls[0][0]);
+
+		const url = mockFetch.mock.calls[0]?.[0];
+		expect.assert(url instanceof URL, 'fetch was not called with URL');
+
 		const input = url.searchParams.get('action1') ?? '';
 		expect(input).toEqual(' ');
 	});
