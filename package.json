@@ -34,7 +34,7 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsc -p tsconfig.build.json",
+		"build": "tsc --build",
 		"lint": "eslint --flag unstable_native_nodejs_ts_config",
 		"test": "vitest src",
 		"test-api": "vitest api"
