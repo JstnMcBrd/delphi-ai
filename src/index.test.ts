@@ -1,5 +1,3 @@
-import { URL } from 'node:url';
-
 import { afterAll, describe, expect, test, vi } from 'vitest';
 
 import delphi from './index.js';
